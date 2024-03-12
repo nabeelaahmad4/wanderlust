@@ -1,0 +1,97 @@
+  <% layout("/layouts/boilerplate") %>
+
+    <div class="row mt-3">
+      <div class="col-8 offset-2">
+        <h3>Create a New Listing</h3>
+    <form  method="POST" action="/listings" novalidate class="needs-validation" enctype="multipart/form-data" >
+     
+      <!-- title -->
+      <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input
+          name="listing[title]"
+          placeholder="Add a catchy title"
+          type="text"
+          id="title"
+          class="form-control "
+         required
+        />
+        </div>
+        <div class="valid-feedback">Username looks good!</div>
+
+        <!-- description -->
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea name="listing[description]" class="form-control" id="description" required></textarea>
+          <div class="invalid-feedback">enter short description </div>
+  
+        </div>
+
+        <!-- image -->
+          <div class="mb-3">
+            <label for="image" class="form-label">Upload listing image </label>
+            <input
+              name="listing[image]"
+              type="file"
+              id="image"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">upload image</div>
+
+            </div>
+
+        <div class="row">
+
+          <!-- price -->
+          <div class="mb-3 col-md-4">
+            <label for="price" class="form-label">Price</label>
+            <input
+              name="listing[price]"
+              placeholder="1200"
+              type="text"
+              id="price"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Price shoild be valid</div>
+          </div>
+
+          <!-- country -->
+          <div class="mb-3 col-md-8">
+            <label for="country" class="form-label">Country</label>
+            <input
+              name="listing[country]"
+              placeholder="India"
+              type="text"
+              id="country"
+              autocomplete="given-name"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Country name should be valid</div>
+          </div>
+        </div>
+
+          <!-- location -->
+
+          <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input
+              name="listing[location]"
+              id="location"
+              placeholder="Jaipur,Rajasthan"
+              type="text"
+              class="form-control"
+              required />                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+            <div class="invalid-feedback">Location should be valid</div>
+          </div>
+
+         <!-- button -->
+
+        <button class="btn btn-dark add-btn">Add</button>
+        <br><br>
+
+    </form>
+  </div>
+  </div>
